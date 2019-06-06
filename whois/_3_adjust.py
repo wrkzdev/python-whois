@@ -9,6 +9,7 @@ PYTHON_VERSION = sys.version_info[0]
 class Domain:
 
     def __init__(self, data):
+        print(data)
         self.name = data['domain_name'][0].strip().lower()
         self.registrar = data['registrar'][0].strip()
         self.creation_date = str_to_date(data['creation_date'][0])
@@ -38,6 +39,7 @@ class Domain:
 # http://docs.python.org/library/datetime.html#strftime-strptime-behavior
 DATE_FORMATS = [
     '%d-%b-%Y',                     # 02-jan-2000
+    '%d-%B-%Y',
     '%d.%m.%Y',                     # 02.02.2000
     '%d/%m/%Y',                     # 01/06/2011
     '%Y-%m-%d',                     # 2000-01-02

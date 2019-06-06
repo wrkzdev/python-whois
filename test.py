@@ -1,6 +1,9 @@
 import whois
 
 domains = '''
+    blacknight.ie
+    daft.ie
+    nonexistant.ie
     google.com.br
     www.google.com
     www.fsdfsdfsdfsd.google.com

@@ -58,6 +58,7 @@ ru = {
 
     'creation_date':			r'\ncreated:\s*(.+)',
     'expiration_date':			r'\npaid-till:\s*(.+)',
+    'updated_date':             r'\nLast updated on\s*(.+)',
 
     'name_servers':				r'\nnserver:\s*(.+)',
     'status':					r'\nstate:\s*(.+)',
@@ -296,4 +297,19 @@ sh = {
     'expiration_date':         r'\nRegistry Expiry Date:\s*(.+)',
     'registrant':              r'\nRegistrant Organization:\s?(.+)',
     'status':                  r'\nDomain Status:\s?(.+)',
+}
+
+ie = {
+    'extend': None,
+
+    'domain_name':              r'Domain:\s?(.+)',
+    'admin:':                   r'Admin-c:\s*(.+)',
+    'tech:':                    r'Tech-c::\s*(.+)',
+    'registrar':                None,
+    'registrant':               r'Domain Holder:\s?(.+)',
+    'creation_date':            r'Registration Date:\s?(.+)',
+    'expiration_date':          r'Renewal Date:\s?(.+)',
+    'updated_date':             r'changed:\s?(.+)',
+    'name_servers':             r'nserver:\s*(.+)',
+    'status':                   r'Renewal status:\s?(.+)',
 }
